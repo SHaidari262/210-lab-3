@@ -25,6 +25,19 @@ Restaurant createRestaurant ()
     cin >> r.noOfTables;
     cin.ignore(1000, 10); // Ignore the newline character left in the input buffer
 
+    // Get the address
+    cout << "Enter the address: ";
+    getline(cin, r.address);
+
+    // Get the phone number
+    cout << "Enter the phone number: ";
+    getline(cin, r.phoneNumber);
+
+    // Get the rating
+    cout << "Enter the rating (0.0 - 5.0): ";
+    cin >> r.rating;
+    cin.ignore(1000, 10); // Ignore the newline character left in the input buffer
+
     // Return the Restaurant struct object
     return r;
 }
