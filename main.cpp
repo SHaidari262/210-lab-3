@@ -57,8 +57,15 @@ void displayRestaurant(const Restaurant& r) {
 int main() {
     // Call the createRestaurant function to get restaurant details
     Restaurant myRestaurant = createRestaurant();
-
+    Restaurant myrastarurabrant = createRestaurant();
+    Restaurant myrestaurant2 = createRestaurant();
+    Restaurant myrestaurant3 = createRestaurant();
+        
+    // Display the restaurants
     displayRestaurant(myRestaurant); // Display the restaurant details
-    
+    displayRestaurant(myrastarurabrant); // Display the restaurant details
+    displayRestaurant(myrestaurant2); // Display the restaurant details
+    displayRestaurant(myrestaurant3); // Display the restaurant details
+
     return 0;
 }
