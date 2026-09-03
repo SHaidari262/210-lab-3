@@ -42,10 +42,23 @@ Restaurant createRestaurant ()
     return r;
 }
 
+// Function to display restaurant details
+void displayRestaurant(const Restaurant& r) {
+    // Display the restaurant details
+    cout << "\nRestaurant Details:" << endl;
+    cout << "Name: " << r.name << endl;
+    cout << "Number of Tables: " << r.noOfTables << endl;
+    cout << "Address: " << r.address << endl;
+    cout << "Phone Number: " << r.phoneNumber << endl;
+    cout << "Rating: " << r.rating << endl;
+}
+
 // main fuction
 int main() {
     // Call the createRestaurant function to get restaurant details
     Restaurant myRestaurant = createRestaurant();
 
+    displayRestaurant(myRestaurant); // Display the restaurant details
+    
     return 0;
 }
