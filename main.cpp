@@ -44,6 +44,8 @@ Restaurant createRestaurant ()
 
 // main fuction
 int main() {
-    // Create an instance of the Restaurant struct
+    // Call the createRestaurant function to get restaurant details
+    Restaurant myRestaurant = createRestaurant();
 
+    return 0;
 }
